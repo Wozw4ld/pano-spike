@@ -1,0 +1,68 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #15171a;
+}
+
+.app {
+  position: relative;
+  height: 100%;
+}
+
+.viewer {
+  position: absolute;
+  inset: 0;
+}
+
+.plan {
+  position: absolute;
+  right: 12px;
+  bottom: 56px; /* над нижней панелью просмотрщика */
+  z-index: 10;
+  width: 200px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.plan h2 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #3d4247;
+}
+
+.plan svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.rooms button {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1px solid #d5d9d4;
+  border-radius: 8px;
+  background: #fff;
+  color: #15171a;
+  font: 600 13px system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.rooms button.active {
+  background: #0f6e5c;
+  border-color: #0f6e5c;
+  color: #fff;
+}
